@@ -70,10 +70,13 @@ const cars = [
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-cars.push({})
-console.log(cars)
-
-for (i = 0; i < cars.length; i++) {
+cars.push({
+  brand: 'Fiat',
+  model: '500',
+  color: 'white',
+  trims: ['life', 'style'],
+})
+for (let i = 0; i < cars.length; i++) {
   cars[i].trims.pop()
 }
 console.log(cars)
@@ -100,4 +103,8 @@ const numericArray = [
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
+
+
+
+
+
